@@ -1,0 +1,653 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    transition: color 0.2s;
+    color: black;
+}
+
+a:hover{
+    color:#ff4a52 ;
+}
+
+.d-flex{
+    display: flex !important;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.d-grid{
+    display: grid;
+}
+
+
+/* header ------------------------------------------- */
+
+
+.headerbar{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: space-around;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.header-logo>a>img:hover{
+    transition: all;
+    transform: scale(1.0000001) !important;
+}
+
+.navbar-ul{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 1.19vw;
+}
+
+
+.search-btn button{
+    padding: 25px;
+    background-color: #ff4a52;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    cursor: pointer;
+    position: absolute;
+    right: 3.5vw;
+    top: 1vw;
+}
+
+.search-btn button i{
+    color: white;
+}
+
+.burger-btn button{
+    padding: 25px;
+    padding: 25px;
+    background-color: #1ec6b6;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    cursor: pointer;
+}
+
+.burger-btn button i{
+    color: aliceblue;
+}
+
+.burger-btn{
+    display: none;
+}
+
+.show{
+    display: block !important;
+    width: 100%;
+}
+
+
+/* main --------------------------------------- */
+
+/* banner---- */
+
+.banner{
+    background-image: url(../images/banner2.png);
+    height: 50vw;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    margin-top: 0.3em;
+}
+
+.banner-text{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 45vw;
+}
+
+
+.banner-text h3{
+    font-size: 8vw;
+    font-family: cursive;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 10vw;
+}
+
+.banner-text p{
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+
+.banner-text a{
+    padding: 1vw;
+    font-size: 1.7vw;
+    color: white;
+    border-radius: 10px;
+    background-color: #ff4a52;
+    font-family: sans-serif;
+}
+
+.banner-text a:hover{
+    background-color: #1ec6b6;
+    transition: all 0.5s;
+    color: #ffffff !important;
+}
+
+/* under banner---------------- */
+
+
+.sub-banner form{
+    background-color: rgb(2, 2, 66);
+    padding: 30px 0;
+    height: max-content;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.sub-banner form p{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1.35vw;
+}
+
+.sub-banner form div{
+    margin: 0 25px;
+}
+
+.sub-banner form input{
+    background-color:rgb(2, 2, 66);
+    border: 1px solid rgba(255, 255, 255, 0.511);
+    border-radius: 5px;
+    height: 3vw;
+    margin: 5px;
+    width: 18vw;
+    color: #ffffff;
+    font-size: 1.1vw;
+    padding: 14px 24px;
+    outline: 0;
+}
+
+.sub-banner form button{
+    padding: 0.9vw 1.4vw;
+    background-color: #ff4a52;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1vw;
+    border: none;
+}
+
+
+.sub-banner form button:hover{
+    background-color: #1ec6b6;
+    transition: all 0.5s;
+    color: #ffffff !important;
+}
+
+
+/* popular destinations----------------------- */
+
+.p-destination{
+    margin-top: 7em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.p-destination h3{
+    font-size: 2.6em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.p-destination p{
+    color: rgba(0, 0, 0, 0.584);
+    font-weight: 700;
+    text-align: center;
+}
+
+.country-box{
+    margin-top: 6em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.row2 , .row3 , .row1{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    flex-wrap: wrap;
+    gap: 8%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.c-places{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1ec6b6;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.c-places:hover{
+    background-color: #ff4a52;
+    color: white !important;
+}
+
+.c-name{
+    color: #ffffff;
+    font-size: 31px;
+}
+
+.div1{
+    position: relative;
+}
+
+.div1 div{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    display: flex;
+    gap: 15px;
+}
+
+
+.div2{
+    position: relative;
+}
+
+.div2 div{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    display: flex;
+    gap: 15px;
+}
+
+.div3{
+    position: relative;
+}
+
+.div3 div{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    display: flex;
+    gap: 15px;
+}
+
+.div4{
+    position: relative;
+}
+
+.div4 div{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    display: flex;
+    gap: 15px;
+}
+
+.div5{
+    position: relative;
+}
+
+.div5 div{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    display: flex;
+    gap: 15px;
+}
+
+.div6{
+    position: relative;
+}
+
+.div6 div{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    display: flex;
+    gap: 15px;
+}
+
+
+.sh-btn{
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+#showMore{
+    align-items: center;
+    padding: 0.9vw 1.4vw;
+    background-color: #ff4a52;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+#showMore:hover{
+    background-color: #1ec6b6;
+    transition: all 0.4s;
+
+}
+
+
+
+.country-box2{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.5s;
+}
+
+
+.div7{
+    position: relative;
+}
+
+.div7 div{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    display: flex;
+    gap: 15px;
+}
+
+.div7>img{
+    width: 362px;
+    height: 270px;
+    border-radius: 6px;
+}
+
+.div8>img{
+    width: 362px;
+    height: 270px;
+    border-radius: 6px;
+}
+
+.div9>img{
+    width: 362px;
+    height: 270px;
+    border-radius: 6px;
+}
+
+
+
+
+
+.div8{
+    position: relative;
+}
+
+.div8 div{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    display: flex;
+    gap: 15px;
+}
+
+.div9{
+    position: relative;
+}
+
+.div9 div{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    display: flex;
+    gap: 15px;
+}
+
+
+
+img:hover{
+    transform: translateY(-12px);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+
+/* newsletter section----------------------------------- */
+
+
+.news-letter{
+    margin-top: 20px;
+    height: 240px;
+    background-image: url(../images/newsletter.png);
+    background-position: 65% 65%;
+    background-size: cover;  
+    position: relative;  
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news-letter::before{
+    position: absolute;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0.7 ;
+    top: 0;
+    left: 0;
+}
+
+.news-letter-container{
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 10;
+
+
+}
+
+.news-text{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 22px;
+    margin-right: 20px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.news-text>p{
+    color: #ffffff9e;
+    font-size: 17px !important;
+}
+
+
+.news-form>input{
+    width: 100%;
+    margin-right: 7px;
+    height: 40px;
+    padding: 1em 2em;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+.news-form{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.news-form>button{
+    align-items: center;
+    padding: 0.9vw 1.4vw;
+    background-color: #ff4a52;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.news-form>button:hover{
+    background-color: #1ec6b6;
+    transition: all 0.4s;
+
+}
+
+/* video--------------------------------------------- */
+
+
+
+.video{
+    margin-top: 15px;
+}
+
+
+.video-container{
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.video-container h1{
+    color: #f8f8f8;
+    font-family: cursive;
+    font-size: 7vw;
+    position: absolute;
+    margin-bottom: 1em;
+}
+
+
+.video-container div{
+    position: absolute;
+    margin-top:15em ;
+    background-color: #ff4a52;
+    border: none;
+    border-radius: 50%;
+    padding: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container div:hover{
+    background-color: #1ec6b6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* footer------------------------------------------------ */
+
+.footer{
+    background-color: rgb(3, 3, 35);
+    margin-top: 15px;
+    padding: 30px;
+    color: #f8f8f8;
+    width: 100%;
+}
+
+.footer-container{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-column-a{
+    flex-direction: column;
+    line-height: 2.6em;
+}
+.footer-column-a a{
+    color: #f8f8f8;
+}
+
+#footer-img:hover{
+    transition: all;
+    transform: scale(1.00000000000001) !important;
+}
+
+.footer-column-b{
+    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-column-b>h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    margin-bottom: 1vw;
+    padding-top: 8px;
+}
+
+.footer-column-b-container{
+    flex-direction: row;
+}
+
+.a{
+    flex-direction: column;
+    margin-right: 2vw;
+    line-height: 2.4vw;
+}
+
+.b{
+    flex-direction: column;
+    margin-left: 2vw;
+    line-height: 2.4vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+

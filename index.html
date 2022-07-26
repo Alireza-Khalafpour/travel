@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-quires.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <script src="app.js"></script>
+    <title>Travelo</title>
+</head>
+
+<body>
+
+
+    <header class="headerbar">
+
+        <div class="header-logo">
+            <a href="#"><img src="images/logo.png" alt="travel logo"></a>
+        </div>
+
+        <nav class="navbar">
+            <ul class="navbar-ul" id="menu">
+                <li class="nav-li nav-li1"> <a href="#">Home</a></li>
+                <li class="nav-li"> <a href="#">About</a></li>
+                <li class="nav-li"> <a href="#">Destination</a></li>
+                <li class="nav-li"> <a href="#">Pages</a></li>
+                <li class="nav-li"> <a href="#">Blog</a></li>
+                <li class="nav-li"> <a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="search-btn">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="burger-btn">
+            <button onclick="showMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+
+    </header>
+
+
+    <!-- main //////////////////////////////////////////// -->
+
+
+    <main>
+
+        <section class="content d-flex">
+
+            <div class="banner">
+                <div class="banner-text d-flex">
+                    <h3>Australia</h3>
+                    <p>Pixel perfect design with awesome contents</p>
+                    <a href="#">Explore Now</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="sub-banner d-flex">
+            <form action="#" class="d-flex">
+                <p>Where you want to go?</p>
+                <div class="form-inputs d-flex">
+                    <input type="text" placeholder="where to go?">
+                    <input type="text" placeholder="where to go?">
+                    <input type="text" placeholder="where to go?">
+                </div>
+                <button>Search</button>
+            </form>
+        </section>
+
+
+        <section class="p-destination d-flex">
+            <h3>Popular Destination</h3>
+            <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf
+                moon beard words.</p>
+            <div class="country-box">
+
+                <div class="row1">
+
+                    <div class="div1">
+                        <img src="images/1.png" alt="" onclick="">
+                        <div>
+                            <a href="#" class="c-name"> Italy</a>
+                            <a href="#" class="c-places ">07 places</a>
+                        </div>
+                    </div>
+
+                    <div class="div2">
+                        <img src="images/2.png" alt="">
+                        <div>
+                            <a href="#" class="c-name"> Brazil</a>
+                            <a href="#" class="c-places ">07 places</a>
+                        </div>
+
+                    </div>
+
+                    <div class="div3">
+                        <img src="images/3.png" alt="">
+                        <div>
+                            <a href="#" class="c-name"> America</a>
+                            <a href="#" class="c-places ">07 places</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row2">
+
+                    <div class="div4">
+                        <img src="images/4.png" alt="">
+                        <div>
+                            <a href="#" class="c-name"> Nepal</a>
+                            <a href="#" class="c-places ">07 places</a>
+                        </div>
+
+                    </div>
+
+                    <div class="div5">
+                        <img src="images/5.png" alt="">
+                        <div>
+                            <a href="#" class="c-name"> Maldives</a>
+                            <a href="#" class="c-places ">07 places</a>
+                        </div>
+
+                    </div>
+
+                    <div class="div6">
+                        <img src="images/6.png" alt="">
+                        <div>
+                            <a href="#" class="c-name"> Iran</a>
+                            <a href="#" class="c-places ">07 places</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sh-btn" onclick="showMore()">
+
+                <button id="showMore">
+                    Show less
+                </button>
+
+            </div>
+
+            <div class="country-box2" id="country-box2-id">
+
+                <div class="row3">
+
+                    <div class="div7">
+                        <img src="images/img-india.jpg" alt="">
+                        <div>
+                            <a href="#" class="c-name"> India</a>
+                            <a href="#" class="c-places ">07 places</a>
+                        </div>
+
+                    </div>
+
+                    <div class="div8">
+                        <img src="images/img-philipins.jpg" alt="">
+                        <div>
+                            <a href="#" class="c-name"> Philippine</a>
+                            <a href="#" class="c-places ">07 places</a>
+                        </div>
+
+                    </div>
+
+                    <div class="div9">
+                        <img src="images/img-germany.jpg" alt="">
+                        <div>
+                            <a href="#" class="c-name">Germany</a>
+                            <a href="#" class="c-places ">07 places</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="news-letter d-flex">
+
+            <div class="news-letter-container d-flex">
+
+                <div class="news-text d-flex">
+                    <h4>Subscribe Our Newsletter</h4>
+                    <p>Subscribe newsletter to get offers and about new places to discover.</p>
+                </div>
+
+                <form class="news-form">
+                    <input type="email" placeholder="Your Email" id="email-input">
+                    <button type="submit" id="subscribe-btn">Subscribe</button>
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <section class="video d-flex">
+            <div class="video-container d-flex">
+                <h1>Enjoy video</h1>
+                <div>
+                    <a href="#" style="color: aliceblue;" !important><i class="fa fa-play"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <section class="footer">
+            <div class="footer-container d-flex">
+                <div class="footer-column-a d-flex">
+                    <div><img src="images/footer_logo.png" alt="travel logo" id="footer-img"></div>
+                    <a href="#"> 5th flora, 700/D kings road, green lane New York-1782</a>
+                    <a href="#">+10 367 826 2567</a>
+                    <a href="#">contact@carpenter.com</a>
+                </div>
+
+
+                <div class="footer-column-b d-flex">
+                    <h3>Popular Destinations</h3>
+                    <div class="footer-coulmn-b-container d-flex">
+                        <div class="a d-flex">
+                            <p>Indonesia</p>
+                            <p>Italy</p>
+                            <p>America</p>
+                            <p>Canada</p>
+                        </div>
+                        <div class="b d-flex">
+                            <p>Iran</p>
+                            <p>India</p>
+                            <p>France</p>
+                            <p>Switzerland</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+        function showMenu() {
+            let menu = document.getElementById("menu");
+            if (menu.className === "navbar-ul") {
+                menu.className += "show";
+            } else {
+                menu.className = "navbar-ul";
+            };
+        }
+
+
+
+        function showMore() {
+            let more = document.getElementById("country-box2-id");
+            let btn = document.getElementById("showMore");
+            if (more.style.display === "none") {
+                more.style.display = "flex";
+                btn.innerHTML = "show less";
+            } else {
+                more.style.display = "none";
+                btn.innerHTML = "click to see more";
+                btn.style.color = "#ffffff";
+            }
+        }
+
+
+        let pop_up = document.querySelector("#subscribe-btn").addEventListener("click", () => {
+            if (document.querySelector("#email-input").value == "") {
+                alert("Empty!!! \nPlease insert your email ");
+            } else {
+                alert("WELCOME DEAR \nYou subscribed successfully...");
+            }
+        })
+
+        window.addEventListener("load", () => {
+            if (navigator.onLine) {
+                console.log("شما متصل به اینترنت هستید")
+
+            } else {
+                console.log("شما متصل به اینترنت نیستید ")
+            }
+        })
+
+
+        var w = window.innerWidth || document.documentElement.clientWidth;
+        var h = window.innerHeight || document.body.clientHeight;
+
+        window.addEventListener("load", () => {
+            if (w > 1020 & w < 1450) {
+                console.log("you are using a desktop or laptop... ")
+            } else if (w < 1020 & w > 559) {
+                console.log("you are using a tablet...")
+            } else if (w < 600) {
+                console.log("your device is a Smart phone...")
+            }
+        })
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
